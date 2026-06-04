@@ -1,12 +1,12 @@
-# # 🐍 Python OOP: Polymorphism with Classes
+# 6e)   Python OOP: Polymorphism with Classes
 
-## 🎯 AIM
+##  AIM
 
 To create two specific classes — `Beans` and `Mango`. Then, create a **generic function** that can accept any object and determine its **type** (Fruit or Vegetable) and **color**, using polymorphism.
 
 ---
 
-## 🧠 ALGORITHM
+##  ALGORITHM
 
 1. **Create Class `Beans`**:
    - Define `type()` method that prints `"Vegetable"`.
@@ -25,8 +25,29 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 
 ---
 
-## 💻 Program
-
+##  Program
+```
+class Beans(): 
+    def type(self):
+        print("Vegetable")
+    def color(self):
+        print("Green")
+class Mango: 
+    def type(self):
+        print("Fruit")
+    def color(self):
+        print("Yellow")
+        
+def func(obj): 
+       obj.type()
+       obj.color()
+obj_beans = Beans() 
+obj_mango = Mango() 
+func(obj_beans) 
+func(obj_mango)
+```
 ## Output
+<img width="438" height="236" alt="image" src="https://github.com/user-attachments/assets/037ec19d-a3b6-421c-abd7-9f6870591801" />
 
 ## Result
+Program executed Successfully.
